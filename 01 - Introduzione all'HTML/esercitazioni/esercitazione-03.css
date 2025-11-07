@@ -32,3 +32,20 @@ div#sezione-1 > p.classe-1 span.classe-1 {
 a:hover {
     color: yellow;
 }
+
+/*
+    Es 6 - Colora di rosa il primo paragrafo con classe-2 al passaggio del mouse
+*/
+p.classe-2:hover {
+    color: pink;
+}
+
+/*
+    Es 7 - Colora di arancione il primo paragrafo figlio di sezione-2
+*/
+/*.sezione-2 > p:not(.classe-1) {
+    color: orange;
+}*/
+.sezione-2 > :nth-child(2) {
+    color: orange;
+}
