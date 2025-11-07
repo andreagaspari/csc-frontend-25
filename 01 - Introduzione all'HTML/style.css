@@ -44,3 +44,22 @@ p > * {
 a:hover {
     color: white;
 }
+
+/*
+    Seleziona gli elementi che NON hanno classe "io-no" 
+*/
+:not(.io-no) {
+    color: blue;
+}
+
+/*
+    Selezione dei figli
+*/
+:first-child { /* PRIMO FIGLIO */ }
+:last-child { /* ULTIMO FIGLIO */ }
+:nth-child(2) { /* N-simo FIGLIO (in questo caso secondo figlio) */ }
+:nth-child(2n) { /* Figli pari */ }
+:nth-child(even) { /* Figli pari */ }
+:nth-child(2n + 1) { /* Figli dispari */ }
+:nth-child(odd) { /* Figli dispari */ }
+:nth-child(3n) { /* Un figlio ogni 3 */ }
