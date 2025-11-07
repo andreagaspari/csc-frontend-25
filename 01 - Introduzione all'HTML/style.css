@@ -37,3 +37,10 @@ p.testo-principale a {
 p > * {
     color: green;
 }
+
+/*
+    Seleziona l'elemento di tipo A su cui l'utente ha il mouse
+*/
+a:hover {
+    color: white;
+}
