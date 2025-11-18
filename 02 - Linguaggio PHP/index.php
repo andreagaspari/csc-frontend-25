@@ -62,5 +62,47 @@
     if ($array_3["eta"] === "21") {} // Questa condizione è FALSA!
 
 
+    /** Operatori logici
+     * 
+     * AND  -> and oppure &&
+     * OR   -> or oppure ||
+     * XOR  -> xor
+     * NOT  -> !
+     */
+    // Stampa "Falso"
+    if (true and false):    // (true && false)
+        echo "Condizione vera";
+    else:
+        echo "Condizione falsa";
+    endif;
+
+    // Stampa "Vero"
+    if (true or false):     // (true || false)
+        echo "Condizione vera";
+    else:
+        echo "Condizione falsa";
+    endif;
+
+    $persona_1 = array(
+        "nome" => "Luca",
+        "cognome" => "Rossi",
+        "telefono" => ""
+    );
+    
+    $persona_2 = array(
+        "nome" => "Lorenza",
+        "cognome" => "Verdi"
+    );
+
+    if ($persona_1["telefono"] != ""):
+        echo "Tel: ";
+        echo $persona_1["telefono"];
+    endif;
+
+    // Se la prima condizione è FALSA non valuto nemmeno la seconda, dato che il risultato è comunque FALSO
+    if (array_key_exists("telefono", $persona_2) && $persona_2["telefono"] != ""):
+        echo "Tel: ";
+        echo $persona_2["telefono"];
+    endif;
 
 ?>
