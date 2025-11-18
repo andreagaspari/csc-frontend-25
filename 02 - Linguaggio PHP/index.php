@@ -1,4 +1,7 @@
 <?php 
+    // Mostra errori nel documento anche se disattivati a livello globale
+    ini_set('display_errors', true);
+
     // Commento in linea
     /*
        Commento su più linee
@@ -101,8 +104,7 @@
 
     // Se la prima condizione è FALSA non valuto nemmeno la seconda, dato che il risultato è comunque FALSO
     if (array_key_exists("telefono", $persona_2) && $persona_2["telefono"] != ""):
-        echo "Tel: ";
-        echo $persona_2["telefono"];
+        echo "Tel: " . $persona_2["telefono"];
     endif;
 
 ?>
